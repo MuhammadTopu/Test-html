@@ -129,7 +129,8 @@
 </head>
 <body>
   <div class="header">
-    <img class="image" src="Screenshot 2025-05-01 090954.png" alt="AI Robot">
+<!--     <img class="image" src="Screenshot 2025-05-01 090954.png" alt="AI Robot"> -->
+    <h1>Ai chat_bot</h1>
   </div>
   <div class="chat-container">
     <div class="chat-box" id="chatBox"></div>
@@ -167,7 +168,7 @@
       chatBox.appendChild(dots);
       chatBox.scrollTop = chatBox.scrollHeight;
       try {
-        const response = await fetch('http://localhost:4000/api/chat', {
+        const response = await fetch('https://muhammadtopu.github.io/Test-html/api/chat', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ message })
